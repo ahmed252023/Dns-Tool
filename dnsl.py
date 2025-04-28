@@ -16,7 +16,7 @@ DNS_RECORDS = ["A", "AAAA", "CNAME", "MX", "NS", "TXT", "SOA", "PTR"]
 def dns_lookup(domain, record_type=None, server=None, doh=False):
     banner = pyfiglet.figlet_format("DNS LOOKUP")
     print(f"{Fore.BLUE}{banner}{Style.RESET_ALL}")
-    print(f"{Fore.CYAN}Developed by: Ibrahem abo kila{Style.RESET_ALL}\n")
+    print(f"{Fore.CYAN}Developed by: Ben Mansour Ahmed{Style.RESET_ALL}\n")
     resolver = dns.resolver.Resolver()
     if server:
         resolver.nameservers = [server]
