@@ -41,7 +41,7 @@ pyfiglet
 How to Use
 Clone the repository:
 
-git clone https://github.com/yourusername/dns-lookup-tool.git
+git clone https://github.com/ahmed252023/dns-lookup-tool.git
 cd dns-lookup-tool
 Install dependencies:
 
