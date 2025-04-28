@@ -51,26 +51,28 @@ Run the tool:
 python dns_lookup.py -d example.com
 📋 Command-line Options
 
-Option	Description	Example
+Option	
 -d, --domain	Domain(s) to query (can specify multiple)	-d example.com
 -t, --type	DNS record type (e.g., A, AAAA, MX, TXT)	-t A
 -s, --server	Custom DNS server (e.g., 8.8.8.8)	-s 8.8.8.8
 --axfr	Attempt Zone Transfer (requires -s option)	--axfr
 --doh	Use DNS-over-HTTPS (Cloudflare DNS)	--doh
-📌 Examples
+
+
+
+Examples
 Simple Lookup:
-
 python dns_lookup.py -d example.com
+
 Lookup specific record type (e.g., MX):
-
 python dns_lookup.py -d example.com -t MX
+
+
 Using a custom DNS server:
-
 python dns_lookup.py -d example.com -s 1.1.1.1
+
 DNS over HTTPS (DoH):
+python dns_lookup.py -d example.com --doh 
 
-python dns_lookup.py -d example.com --doh
 Attempt Zone Transfer (AXFR):
-
-
 python dns_lookup.py -d example.com -s ns1.example.com --axfr
