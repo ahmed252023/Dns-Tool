@@ -62,17 +62,22 @@ Option
 
 Examples
 Simple Lookup:
+
 python dns_lookup.py -d example.com
 
 Lookup specific record type (e.g., MX):
+
 python dns_lookup.py -d example.com -t MX
 
 
 Using a custom DNS server:
+
 python dns_lookup.py -d example.com -s 1.1.1.1
 
 DNS over HTTPS (DoH):
+
 python dns_lookup.py -d example.com --doh 
 
 Attempt Zone Transfer (AXFR):
+
 python dns_lookup.py -d example.com -s ns1.example.com --axfr
